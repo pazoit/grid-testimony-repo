@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", serif;
+    font-size: 13px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+font-weight: 500;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-grid{
+   
+    width:70%;
+    display: grid;
+    gap: 24px;
+grid-template-rows:    repeat(2, auto);
+grid-template-columns:  minmax(auto, 18%) minmax(auto, 22%) minmax(auto, 19%) minmax(auto, 20%);
+}
+
+.testimonial {
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    padding-right: 9px;
+}
+
+.profile-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+.profile-detail{
+ display: flex;
+flex-direction: column;
+align-content: center;
+ gap: 2px;
+}
+
+.profile-detail h1{
+    font-size: 13px;
+    font-weight: 500;
+     margin: 0; 
+}
+
+.profile-detail p{
+   font-size: 11px;
+    opacity: 0.5;
+     margin: 0; 
+}
+
+
+.main-text{
+padding-right: 2px;
+
+}
+
+
+.description{
+font-weight: 600px; ;
+    font-size: 22px;
+}
+
+
+
+
+.container-text{
+
+    padding-right: 15px;
+}
+
+
+
+
+.container-dani{
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+background-color:hsl(263, 55%, 52%) ;
+background-image:url(./images/bg-pattern-quotation.svg);
+
+color:hsl(0, 0%, 100%);
+background-repeat: no-repeat;
+background-position: top right 80px;
+
+border-radius: 10px;
+grid-column-start: 1;
+grid-column-end:   3;
+
+
+}
+
+
+.container-jona{
+background-color:hsl(217, 19%, 35%) ;
+color:hsl(0, 0%, 100%);
+}
+
+.container-pa {
+background-color:hsl(219, 29%, 14%);
+color:hsl(0, 0%, 100%);
+grid-column-start: 2;
+grid-column-end:   4;
+
+}
+
+.container-kira{
+
+background-color:hsl(0, 0%, 100%);
+color:hsl(217, 19%, 35%);
+grid-row-start:1;
+grid-row-end:3;
+grid-column-start: 4;
+grid-column-end: 5;
+
+}
+
+.container-jean{
+background-color:hsl(0, 0%, 100%);
+color:hsl(217, 19%, 35%);
+}
