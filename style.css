@@ -8,7 +8,6 @@ html, body {
 body{
     background-color: hsl(210, 46%, 95%);
     font-family: "Barlow Semi Condensed", serif;
-    font-size: 13px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -18,22 +17,27 @@ font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid red;
 }
 .testimonials-grid{
    
     width:70%;
     display: grid;
+    justify-items: center;
     gap: 24px;
 grid-template-rows:    repeat(2, auto);
-grid-template-columns:  minmax(auto, 17%) minmax(auto, 21%) minmax(auto, 19%) minmax(auto, 20%);
+grid-template-columns: 1fr 1fr 1fr 1fr; /*minmax(auto, 17%) minmax(auto, 21%) minmax(auto, 19%) minmax(auto, 20%);*/
 }
 
 .testimonial {
-    padding: 32px;
+    padding-left:20px ;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     margin: 0 auto;
-    padding-right: 9px;
+
 }
 
 .profile-img{
@@ -49,7 +53,6 @@ grid-template-columns:  minmax(auto, 17%) minmax(auto, 21%) minmax(auto, 19%) mi
     align-items: center;
     gap: 16px;
     margin-bottom: 18px;
-    z-index: 1;
     position: relative;
 }
 
@@ -73,15 +76,9 @@ align-content: center;
 }
 
 
-.main-text{
-padding-right: 2px;
-
-}
-
-
 .description{
-font-weight: 600px; ;
-    font-size: 21px;
+font-weight: 800px; 
+    font-size: 20px;
 }
 
 
@@ -99,16 +96,12 @@ font-weight: 600px; ;
 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 background-color:hsl(263, 55%, 52%) ;
 background-image:url(./images/bg-pattern-quotation.svg);
-
 color:hsl(0, 0%, 100%);
 background-repeat: no-repeat;
 background-position: top right 80px;
-
 border-radius: 10px;
 grid-column-start: 1;
 grid-column-end:   3;
-
-
 }
 
 
@@ -125,6 +118,8 @@ grid-column-end:   4;
 
 }
 
+
+
 .container-kira{
 
 background-color:hsl(0, 0%, 100%);
@@ -136,7 +131,18 @@ grid-column-end: 5;
 
 }
 
+.container-kira .description{
+font-weight: 600px;
+    color: hsl(219, 29%, 14%);
+}
+
 .container-jean{
 background-color:hsl(0, 0%, 100%);
 color:hsl(217, 19%, 35%);
+}
+
+
+.container-jean .description{
+font-weight: 600px;
+    color: hsl(219, 29%, 14%);
 }
